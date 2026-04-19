@@ -1,0 +1,2 @@
+Question (Page 9 of 12): Java không cho phép tạo hai constructor chỉ khác nhau về tên tham số nhưng cùng kiểu dữ liệu,
+constructor phải khác nhau về số lượng hoặc kiểu tham số để hỗ trợ method overloading

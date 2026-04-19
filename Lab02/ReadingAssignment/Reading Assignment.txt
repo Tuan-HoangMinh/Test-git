@@ -1,0 +1,18 @@
+1. Lợi ích của Getter/Setter
+
+1. Kiểm soát truy cập dữ liệu (Encapsulation – mức cơ bản):
+Cho phép ẩn biến (private) nhưng vẫn truy cập được thông qua method
+Có thể kiểm soát quyền đọc/ghi
+2. Thêm logic kiểm tra (validation): Setter có thể kiểm tra dữ liệu hợp lệ (vd: tuổi không âm), giúp tránh trạng thái sai của object
+3. Dễ thay đổi implementation (ở mức đơn giản): Có thể thay đổi cách lưu dữ liệu bên trong mà không đổi interface bên ngoài
+4. Hỗ trợ framework / thư viện (JavaBeans, ORM…): Một số công cụ yêu cầu getter/setter để hoạt động (reflection, serialization)
+
+
+2. Tác hại của Getter/Setter
+
+2.1. Phá vỡ tính đóng gói (Encapsulation)
+Getter/setter làm lộ dữ liệu nội bộ → giống như biến public
+Vi phạm nguyên lý OOP cơ bản
+2.2. Tăng tính phụ thuộc lẫn nhau: Code bên ngoài phụ thuộc vào cấu trúc dữ liệu bên trong nên sửa class sẽ ảnh hưởng nhiều chỗ khác
+2.3. Giảm khả năng bảo trì (maintainability): Nếu thay đổi kiểu dữ liệu thì phải sửa rất nhiều nơi
+2.4. Dễ làm object rơi vào trạng thái không hợp lệ: Setter thay đổi từng field riêng lẻ → object có thể bị sai logic tạm thời
