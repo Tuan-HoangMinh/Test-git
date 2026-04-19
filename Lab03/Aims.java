@@ -1,6 +1,7 @@
 package theAims;
 
 public class Aims {
+
     public static void main(String[] args) {
 
         // Tạo giỏ hàng
@@ -23,7 +24,7 @@ public class Aims {
 
         // Xóa 1 DVD
         cart.removeDigitalVideoDisc(dvd2);
-
+        cart.removeDigitalVideoDisc(dvd1);
         // In lại tổng tiền
         System.out.println("Total cost after removal: " + cart.totalCost());
     }
